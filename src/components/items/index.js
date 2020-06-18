@@ -101,12 +101,12 @@ export default class Items extends Component{
           <Text>
             <Title>Learn the the numbers</Title>
             <Image url={numbers} src={numbers}/>
-            <Buttontwo onClick={( ) => this.props.changepage("countrys")}>Learn the 22 Spanish speaking countrys</Buttontwo>
+            <Buttontwo onClick={( ) => this.props.changepage("numbers")}>Learn the 22 Spanish speaking countrys</Buttontwo>
           </Text>
           <Text>
             <Title>Learn to tell numbers</Title>
             <Image url={time} src={time}/>
-            <Buttontwo onClick={( ) => this.props.changepage("countrys")}>Learn the 22 Spanish speaking countrys</Buttontwo>
+            <Buttontwo onClick={( ) => this.props.changepage("time")}>Learn the 22 Spanish speaking countrys</Buttontwo>
           </Text>
           
         </HolderTwo>

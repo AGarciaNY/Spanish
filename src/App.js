@@ -4,12 +4,14 @@ import Nav from './components/nav';
 import Items from './components/items/index';
 import Abcs from './components/items/abcs';
 import SSCountrys from './components/items/countrys';
+import Numbers from './components/items/numbers';
+import Time from './components/items/time';
 
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      pickapage: 'home',
+      pickapage: 'numbers',
     }
   }
 
@@ -39,6 +41,20 @@ export default class App extends Component {
         <div>
           <Nav changepage={(page)=> this.pickAPage(page)}/>
           <SSCountrys></SSCountrys>
+        </div>
+      )
+    }else if(this.state.pickapage === "numbers"){
+      return(
+        <div>
+          <Nav changepage={(page)=> this.pickAPage(page)}/>
+          <Numbers></Numbers>
+        </div>
+      )
+    }else if(this.state.pickapage === "time"){
+      return(
+        <div>
+          <Nav changepage={(page)=> this.pickAPage(page)}/>
+          <Time></Time>
         </div>
       )
     }
