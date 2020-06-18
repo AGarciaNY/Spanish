@@ -28,29 +28,27 @@ export default class Abcs extends Component{
   
   render(){
 
-  const read=(info)=>{
-    let utterance = new SpeechSynthesisUtterance(info)
-    utterance.lang = 'es-ES'
-    speechSynthesis.speak(utterance)
-  }
-
-
-
-
-
-
-
-
+    const read=(info)=>{
+      let utterance = new SpeechSynthesisUtterance(info)
+    if(info === "y" ){
+      utterance.lang = 'es-ES'
+      speechSynthesis.speak(utterance) 
+      }else{
+        utterance.lang = 'es-US'
+        speechSynthesis.speak(utterance)
+      }
+    }
 
     var abcs=["a","b","c","ch","d","e","f","g","h","i","j","k","l","ll","m","n"," ñ","o","p","q","r","rr","s","t","u","v","w","x","y","z"];
     var boxes=abcs.map((info,index)=>{
 
-      return(
-      <Holder>  
+    return(
+      <Holder key={index+"letter"}>
         <Letter>{info.toUpperCase()} {info}</Letter>
-        <Button onClick={()=>
-            read(info)
-        }>Sound</Button>
+        <Button onClick={()=>{
+            read(info);
+            console.log("it works");
+        }}>Sound</Button>
       </Holder>
       )
     })

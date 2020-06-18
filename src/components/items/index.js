@@ -36,18 +36,39 @@ const Button = styled.button`
   left:10px;
   top:100px;
 `;
+const HolderTwo = styled.div``;
+const Text =styled.div`
+`;
+const Title=styled.p`
+  position:absolute;
+  top:30px;
+  font-weight: 900;
+`;
+const Image=styled.img`
+position: relative;
+left:200px;
+`;
 export default class Items extends Component{
   render(){
     return(
+      <div>
       <Holder>
         <Backgroundimage url={library} src={library}/>
         <ABCs>
           <ABCtext>Learn the ABCs first</ABCtext>
           <Abcimage url={abcs} src={abcs}/>
-          <Button onClick={( ) => this.props.changepage("abcs")}>Lets lern the ABCs</Button>
+          <Button onClick={( ) => this.props.changepage("abcs")}>Lets learn the ABCs</Button>
         </ABCs>
 
       </Holder>
+      <HolderTwo>
+        <Text>
+          <Title></Title>
+          <Image/>
+          <Button onClick={( ) => this.props.changepage("abcs")}></Button>
+        </Text>
+      </HolderTwo>
+      </div>
     );
   }
 
