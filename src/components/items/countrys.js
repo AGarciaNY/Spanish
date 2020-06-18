@@ -254,23 +254,42 @@ export default class SSCountrys extends Component{
   }
   render(){
     const pickACountry=(CName,city)=>{
-      this.setState({
-        name: CName,
-        cityname:city
-      });
+      if(CName ==="Peru"){
+        let utterance = new SpeechSynthesisUtterance(`${CName}. ${city}`);
+          utterance.lang = 'es-US';
+          utterance.rate = .8
+
+        speechSynthesis.speak(utterance);
+
+        this.setState({
+          name: CName,
+          cityname:city
+        });
+      }else{
+        let utterance = new SpeechSynthesisUtterance(`${CName} ---${city}`);
+        utterance.lang = 'es-US';
+        utterance.rate = 1
+
+        speechSynthesis.speak(utterance);
+
+        this.setState({
+          name: CName,
+          cityname:city
+        });
+      }
     }
     return(
       <Holder>
         <Map>
           <Nonspeaking src={nonrspeaking} alt={nonrspeaking}/>
-          <Mexico src={mexico} alt={mexico} onClick={()=>pickACountry("Mexico","Mexico city")}/>
-          <Guatemala src={guatemala} alt={guatemala} onClick={()=>pickACountry("Guatemala","Guatemala city")}/>
+          <Mexico src={mexico} alt={mexico} onClick={()=>pickACountry("México","la ciudad de  México")}/>
+          <Guatemala src={guatemala} alt={guatemala} onClick={()=>pickACountry("Guatemala","la ciudad de  Guatemala")}/>
           <Honduras src={honduras} alt={honduras} onClick={()=>pickACountry("Honduras","Tegucigalpa")}/>
           <Salvador src={salvador} alt={salvador} onClick={()=>pickACountry("El Salvador","San Salvador")}/>
           
           <Nicaragua src={nicaragua} alt={nicaragua} onClick={()=>pickACountry("Nicaragua","Managua")}/>
           <Costarica src={costarica} alt={costarica} onClick={()=>pickACountry("Costa Rica","San José")}/>
-          <Panama src={panama} alt={panama} onClick={()=>pickACountry("Panama","Panama city")}/>
+          <Panama src={panama} alt={panama} onClick={()=>pickACountry("Panama","la ciudad de Panama")}/>
           <Colombia src={colombia} alt={colombia} onClick={()=>pickACountry("Colombia","bogota")}/>
           <Venezuela src={venezuela} alt={venezuela} onClick={()=>pickACountry("Venezuela","Caracas")}/>
           <Peru src={peru} alt={peru} onClick={()=>pickACountry("Peru","Lima")}/>
@@ -281,8 +300,8 @@ export default class SSCountrys extends Component{
           <Paraguay src={paraguay} alt={paraguay} onClick={()=>pickACountry("Paraguay","Asunción")}/>
           <Uruguay src={uruguay} alt={uruguay} onClick={()=>pickACountry("Uruguay","Montevideo")}/>
           
-          <Cuba src={cuba} alt={cuba} onClick={()=>pickACountry("Cuba","Havana city")}/>
-          <RD src={rd} alt={rd} onClick={()=>pickACountry("Republic Dominican","Santo Domingo")}/>
+          <Cuba src={cuba} alt={cuba} onClick={()=>pickACountry("Cuba","Havana")}/>
+          <RD src={rd} alt={rd} onClick={()=>pickACountry("República Dominicana","Santo Domingo")}/>
           <PuertoR src={puertorico} alt={puertorico} onClick={()=>pickACountry("Puerto Rico","San Juan")}/>
           <Espana src={espana} alt={espana} onClick={()=>pickACountry("España","Madrid")}/>
           <GE src={ge} alt={ge} onClick={()=>pickACountry("Guinea Ecuatorial","Malabo")}/>
