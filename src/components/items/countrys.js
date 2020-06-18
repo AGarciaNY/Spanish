@@ -26,172 +26,272 @@ import ge from '../../image/countrys/ge.png';
 
 const Holder =styled.div`
   justify-content: center;
-  position:relative;
 `;
 const Map = styled.div`
   margin:0 auto;
-  width:1100px;
+  width:1020px;
+  height:9px;
+  position:relative;
 `;
 const Nonspeaking = styled.img`
-  width:1100px;
-  
+  width:1020px;
 `;
 
 const Mexico = styled.img`
-  width:150px;
+  width:151px;
   position: absolute;
-  left:306px;
-  top:12px;
+  left:5px;
+  top:10px;
+  border-radius: 15px 300px 300px 300px;
 `;
 const Guatemala = styled.img`
   width:30px;
   position: absolute;
-  left:418px;
+  left:118px;
   top:97px;
+  border-radius: 30spx 15px 30px 15px;
 `;
 const Salvador = styled.img`
+  height:20px;
   width: 20px;
+  border-top-right-radius: 20px 8px;
+  border-bottom-right-radius: 20px 8px;
+  border-top-left-radius: 3px 6px;
+  z-index:1;
   position: absolute;
-  left: 434px;
+  left: 134px;
   top: 120px;
+  
 `;
 const Honduras =styled.img`
   width: 30px;
   position: absolute;
-  left: 437px;
+  left: 137px;
   top: 115px;
+  z-index:2;
+  border-top-left-radius: 3px 6px;
+  border-top-right-radius: 15px 7px;
+  border-bottom-left-radius: 25px 15px;
+  border-bottom-right-radius: 20px 10px;
+  
+
 `;
 const Nicaragua = styled.img`
   width: 30px;
   position: absolute;
-  left: 443px;
+  left: 143px;
   top: 120px;
+  
+  border-top-left-radius: 30px 20px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
   `;
 const Costarica = styled.img`
   width: 30px;
   position: absolute;
-  left: 440px;
+  left: 140px;
   top: 140px;
+  
+  border-top-left-radius: 0px 0px;
+  border-top-right-radius: 30px 20px;
+  border-bottom-left-radius: 20px 30px;
+  border-bottom-right-radius: 0px 0px;
 `;
 const Panama = styled.img`
   width: 35px;
   position: absolute;
-  left: 467px;
+  left: 167px;
   top: 152px;
+  border-top-left-radius: 5px 5px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  border-bottom-right-radius: 8px px;
 `;
 const Colombia = styled.img`
   width: 60px;
   position: absolute;
-  left: 492px;
+  left: 192px;
   top: 146px;
+  
+  border-top-left-radius: 30px 50px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
 `;
 const Venezuela = styled.img`
   width: 72px;
   position: absolute;
-  left: 518px;
-  top: 142px;
+  left: 219px;
+  top: 141px;
+  
+  border-top-left-radius: 0px 0px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-left-radius: 65px 60px;
+  border-bottom-right-radius: 0px 0px;
 `;
 const Ecuador = styled.img`
   width:37px;
   position: absolute;
-  left: 471px;
+  left: 171px;
   top: 191px;
+  
+  border-top-right-radius: 0px 0px;
+  border-bottom-right-radius: 35px 30px;
 `;
 const Peru = styled.img`
   width:88px;
   position: absolute;
-  left: 470px;
+  left: 170px;
   top: 210px;
+  border-top-right-radius: 60px 100px;
+  border-bottom-left-radius: 0px 0px;
 `;
 const Bolivia = styled.img`
   width:72px;
   position: absolute;
-  left: 545px;
-  top: 272px;
+  left: 244px;
+  top: 271px;
+  
 `;
 const Chile = styled.img`
   width:90px;
   position: absolute;
-  left: 534px;
+  left: 234px;
   top: 320px;
+  
+  border-top-right-radius: 90px 180px;
+  border-bottom-left-radius: 90px 140px;
 `;
 const Paraguay = styled.img`
   width:59px;
   position: absolute;
-  left: 582px;
-  top: 329px;
+  left: 282px;
+  top: 328px;
+  
+  border-bottom-left-radius: 59px 59px;
 `;
 const Uruguay = styled.img`
-  width:35px;
+  width:30px;
   position: absolute;
-  left: 615px;
-  top: 383px;
+  left: 318px;
+  top: 385px;
 `;
 const Argentina= styled.img`
   width:76px;
   position: absolute;
-  left: 556px;
+  left: 256px;
   top: 343px;
+  
+  border-top-left-radius: 20px 30px;
+  border-bottom-left-radius: 50px 100px;
 `;
 const Cuba =styled.img`
   width:40px;
   position: absolute;
-  left: 470px;
+  left: 170px;
   top: 80px;
 `;
 const RD= styled.img`
   width:22px;
   position: absolute;
-  left: 548px;
+  left: 248px;
   top: 100px;
+  border-top-left-radius: 0px 0px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
 `;
 const PuertoR =styled.img`
   width:14px;
   position: absolute;
-  left: 580px;
+  left: 280px;
   top: 110px;
+  border-top-left-radius: 0px 0px;
+  border-top-right-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  border-bottom-right-radius: 0px 0px;
 
 `;
 const Espana= styled.img`
-  width:53px;
+  width:52px;
   position: absolute;
-  left: 902px;
+  left: 604px;
   top: 24px;
 `;
 const GE = styled.img`
   width:35px;
   position: absolute;
-  left: 1002px;
-  top: 300px;
+  left: 698px;
+  top: 296px;
+`;
+const Info = styled.div`
+  height:100px;
+  width:350px;
+  position: absolute;
+  left:250px;
+  top:1px;
+  text-align:center;
+`;
+const CNAME = styled.p`
+margin:10 auto;
+height:20px;
+font-size:20px;
+
+`;
+const CCname = styled.p`
+height:20px;
+margin:10 auto;
+font-size:20px;
 `;
 export default class SSCountrys extends Component{
+  constructor() {
+    super();
+    this.state = {
+      name:null,
+      cityname:null
+    }
+  }
   render(){
+    const pickACountry=(CName,city)=>{
+      this.setState({
+        name: CName,
+        cityname:city
+      });
+    }
     return(
       <Holder>
         <Map>
           <Nonspeaking src={nonrspeaking} alt={nonrspeaking}/>
-          <Mexico src={mexico} alt={mexico}/>
-          <Guatemala src={guatemala} alt={guatemala}/>
-          <Salvador src={salvador} alt={salvador}/>
-          <Honduras src={honduras} alt={honduras}/>
-          <Nicaragua src={nicaragua} alt={nicaragua}/>
-          <Costarica src={costarica} alt={costarica}/>
-          <Panama src={panama} alt={panama}/>
-          <Colombia src={colombia} alt={colombia}/>
-          <Venezuela src={venezuela} alt={venezuela}/>
-          <GE src={ge} alt={ge}/>
-          <Peru src={peru} alt={peru}/>
-          <Ecuador src={ecuador} alt={ecuador}/>
-          <Bolivia src={bolivia} alt={bolivia}/>
-          <Chile src={chile} alt={chile}/>
-          <Paraguay src={paraguay} alt={paraguay}/>
-          <Uruguay src={uruguay} alt={uruguay}/>
-          <Argentina src={argentina} alt={argentina}/>
-          <Cuba src={cuba} alt={cuba}/>
-          <RD src={rd} alt={rd}/>
-          <PuertoR src={puertorico} alt={puertorico}/>
-          <Espana src={espana} alt={espana}/>
+          <Mexico src={mexico} alt={mexico} onClick={()=>pickACountry("Mexico","Mexico city")}/>
+          <Guatemala src={guatemala} alt={guatemala} onClick={()=>pickACountry("Guatemala","Guatemala city")}/>
+          <Honduras src={honduras} alt={honduras} onClick={()=>pickACountry("Honduras","Tegucigalpa")}/>
+          <Salvador src={salvador} alt={salvador} onClick={()=>pickACountry("El Salvador","San Salvador")}/>
+          
+          <Nicaragua src={nicaragua} alt={nicaragua} onClick={()=>pickACountry("Nicaragua","Managua")}/>
+          <Costarica src={costarica} alt={costarica} onClick={()=>pickACountry("Costa Rica","San José")}/>
+          <Panama src={panama} alt={panama} onClick={()=>pickACountry("Panama","Panama city")}/>
+          <Colombia src={colombia} alt={colombia} onClick={()=>pickACountry("Colombia","bogota")}/>
+          <Venezuela src={venezuela} alt={venezuela} onClick={()=>pickACountry("Venezuela","Caracas")}/>
+          <Peru src={peru} alt={peru} onClick={()=>pickACountry("Peru","Lima")}/>
+          <Ecuador src={ecuador} alt={ecuador} onClick={()=>pickACountry("Ecuador","Quito")}/>
+          <Bolivia src={bolivia} alt={bolivia} onClick={()=>pickACountry("Bolivia","Sucre y La Paz")}/>
+          <Chile src={chile} alt={chile} onClick={()=>pickACountry("Chile","Santiago")}/>
+          <Argentina src={argentina} alt={argentina} onClick={()=>pickACountry("Argentina","Buenos Aires")}/>
+          <Paraguay src={paraguay} alt={paraguay} onClick={()=>pickACountry("Paraguay","Asunción")}/>
+          <Uruguay src={uruguay} alt={uruguay} onClick={()=>pickACountry("Uruguay","Montevideo")}/>
+          
+          <Cuba src={cuba} alt={cuba} onClick={()=>pickACountry("Cuba","Havana city")}/>
+          <RD src={rd} alt={rd} onClick={()=>pickACountry("Republic Dominican","Santo Domingo")}/>
+          <PuertoR src={puertorico} alt={puertorico} onClick={()=>pickACountry("Puerto Rico","San Juan")}/>
+          <Espana src={espana} alt={espana} onClick={()=>pickACountry("España","Madrid")}/>
+          <GE src={ge} alt={ge} onClick={()=>pickACountry("Guinea Ecuatorial","Malabo")}/>
+          <Info>
+            <CNAME>Country: {this.state.name}</CNAME>
+            <CCname>City: {this.state.cityname}</CCname>
+          </Info>
         </Map>
+        
       </Holder>
     )
   }
