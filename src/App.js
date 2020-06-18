@@ -9,7 +9,7 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      pickapage: 'countrys',
+      pickapage: 'home',
     }
   }
 

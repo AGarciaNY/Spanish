@@ -31,12 +31,12 @@ export default class Abcs extends Component{
     const read=(info)=>{
       let utterance = new SpeechSynthesisUtterance(info)
     if(info === "y" ){
-      utterance.lang = 'es-ES'
-      speechSynthesis.speak(utterance) 
+      utterance.lang = 'es-ES';
+      speechSynthesis.speak(utterance);
       }else{
-        utterance.lang = 'es-US'
-        speechSynthesis.speak(utterance)
-      }
+        utterance.lang = 'es-US';
+        speechSynthesis.speak(utterance);
+      };
     }
 
     var abcs=["a","b","c","ch","d","e","f","g","h","i","j","k","l","ll","m","n"," ñ","o","p","q","r","rr","s","t","u","v","w","x","y","z"];
