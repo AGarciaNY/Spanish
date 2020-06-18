@@ -32,9 +32,11 @@ export default class Abcs extends Component{
       let utterance = new SpeechSynthesisUtterance(info)
     if(info === "y" ){
       utterance.lang = 'es-ES';
+      utterance.rate = .8
       speechSynthesis.speak(utterance);
       }else{
         utterance.lang = 'es-US';
+        utterance.rate = 1
         speechSynthesis.speak(utterance);
       };
     }

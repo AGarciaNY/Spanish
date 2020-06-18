@@ -30,13 +30,10 @@ export default class Numbers extends Component{
   render(){
     const read=(info)=>{
       let utterance = new SpeechSynthesisUtterance(info)
-    if(info === "y" ){
-      utterance.lang = 'es-ES';
-      speechSynthesis.speak(utterance);
-      }else{
+    
         utterance.lang = 'es-US';
         speechSynthesis.speak(utterance);
-      };
+      
     }
     var boxes=numbers.map((info,index)=>{
 
