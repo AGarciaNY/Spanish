@@ -307,7 +307,7 @@ export default class SSCountrys extends Component{
           <GE src={ge} alt={ge} onClick={()=>pickACountry("Guinea Ecuatorial","Malabo")}/>
           <Info>
             <CNAME>Country: {this.state.name}</CNAME>
-            <CCname>City: {this.state.cityname}</CCname>
+            <CCname>Capitol: {this.state.cityname}</CCname>
           </Info>
         </Map>
         
