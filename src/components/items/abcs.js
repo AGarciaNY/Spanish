@@ -47,7 +47,6 @@ export default class Abcs extends Component{
         <Letter>{info.toUpperCase()} {info}</Letter>
         <Button onClick={()=>{
             read(info);
-            console.log("it works");
         }}>Sound</Button>
       </Holder>
       )
